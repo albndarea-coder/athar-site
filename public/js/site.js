@@ -436,13 +436,16 @@
       s,
       'garden-sec',
       secHead(d, h('p', { class: 'garden-sub' }, d.subtitle || '')),
-      h(
-        'div',
-        { class: 'filter-card' },
-        h('div', { class: 'input-wrap' }, search, icon('search')),
-        h('div', { class: 'chips', role: 'group' }, chips),
-        h('div', { class: 'country-row' }, icon('mapPin'), h('div', { class: 'select-wrap' }, select, icon('chevronsUpDown')))
-      ),
+      // مربع البحث والتصفية يظهر فقط عند تفعيله من لوحة الإدارة
+      d.showFilters === true
+        ? h(
+            'div',
+            { class: 'filter-card' },
+            h('div', { class: 'input-wrap' }, search, icon('search')),
+            h('div', { class: 'chips', role: 'group' }, chips),
+            h('div', { class: 'country-row' }, icon('mapPin'), h('div', { class: 'select-wrap' }, select, icon('chevronsUpDown')))
+          )
+        : (list.classList.add('no-filter'), null),
       list,
       empty,
       more

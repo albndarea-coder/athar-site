@@ -598,6 +598,7 @@
     garden: {
       name: 'حديقة الامتنان',
       fields: [
+        { k: 'showFilters', label: 'إظهار مربع البحث والتصفية', type: 'bool' },
         { k: 'pill', label: 'الشارة' },
         { k: 'emoji', label: 'الرمز التعبيري قبل العنوان' },
         { k: 'title', label: 'العنوان' },
