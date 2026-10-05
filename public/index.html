@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<meta name="author" content="{{AUTHOR}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{DESCRIPTION}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+{{FONT_LINK}}
+<link rel="stylesheet" href="/css/site.css">
+<style id="theme-vars">{{THEME_CSS}}</style>
+<script type="application/json" id="site-data">{{SITE_JSON}}</script>
+<script src="/js/icons.js" defer></script>
+<script src="/js/site.js" defer></script>
+</head>
+<body>
+<div id="preview-bar" class="preview-bar" hidden>معاينة المسودة — هذه النسخة غير منشورة للزوار</div>
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="/#home" aria-label="الرئيسية">
+      <span class="brand-badge" id="brand-badge"></span>
+      <span class="brand-word" id="brand-word"></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="القائمة الرئيسية"></nav>
+    <button class="lang-btn" id="lang-btn" type="button" aria-label="اللغة"></button>
+  </div>
+</header>
+<main id="main"></main>
+
+<div class="modal" id="gift-modal" role="dialog" aria-modal="true" aria-labelledby="gift-title" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box" tabindex="-1">
+    <button class="modal-close" type="button" data-close aria-label="إغلاق"></button>
+    <div class="modal-head">
+      <span class="gift-tile" id="gift-tile"></span>
+      <span class="pill pill-gift" id="gift-badge"></span>
+    </div>
+    <h2 class="gift-title" id="gift-title"></h2>
+    <div class="gift-card">
+      <p class="gift-lead" id="gift-lead"></p>
+      <div id="gift-paras"></div>
+      <blockquote class="gift-quote" id="gift-quote"></blockquote>
+      <hr class="gift-sep">
+      <p class="gift-closing" id="gift-closing"></p>
+      <p class="gift-signature" id="gift-signature"></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
